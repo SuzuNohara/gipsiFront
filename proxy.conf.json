@@ -1,0 +1,10 @@
+{
+    "/posts": {
+      "target": "localhost:8080/gapsi",
+      "secure": true,
+      "pathRewrite": {
+      "^/posts": ""
+    },
+      "changeOrigin": true
+    }
+  }

@@ -1,0 +1,68 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 100vh;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none center">
+      <span *ngIf="!open" class="fs-4"><img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/ai2.png?alt=media&token=0e7b5023-79ed-4259-9ec8-18d337985733" class="logo bi me-2" alt="" srcset=""></span>
+      <span *ngIf="open" class="fs-4"><img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/ai2.png?alt=media&token=0e7b5023-79ed-4259-9ec8-18d337985733" class="logo bi me-2" alt="" srcset=""> Hermione</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a [routerLink]="['/']" class="nav-link text-white" [ngClass]="{'active': location == ''}" (click)="location = '';">
+          <div *ngIf="open">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/home.svg?alt=media&token=88c4bc90-bf2d-4ccd-823f-b35e9d6bb2e5" class="icon bi me-2" alt="" srcset="">
+            Inicio
+          </div>
+          <img *ngIf="!open" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/home.svg?alt=media&token=88c4bc90-bf2d-4ccd-823f-b35e9d6bb2e5" class="icon bi me-2" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/person']" [ngClass]="{'active': location == 'person'}" class="nav-link text-white" (click)="location = 'person';">
+          <div *ngIf="open">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/person.svg?alt=media&token=d0b30155-6570-4535-ac6c-671f452ecffd" class="icon bi me-2" alt="" srcset="">
+            Personas
+          </div>
+          <img *ngIf="!open" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/person.svg?alt=media&token=d0b30155-6570-4535-ac6c-671f452ecffd" class="icon bi me-2" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/place']" [ngClass]="{'active': location == 'place'}" class="nav-link text-white" (click)="location = 'place';">
+          <div *ngIf="open">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/pin.svg?alt=media&token=89ee3e43-1655-43d5-80fb-f6cbb0c8fd6f" class="icon bi me-2" alt="" srcset="">
+            Lugares
+          </div>
+          <img *ngIf="!open" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/pin.svg?alt=media&token=89ee3e43-1655-43d5-80fb-f6cbb0c8fd6f" class="icon bi me-2" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/map']" [ngClass]="{'active': location == 'map'}" class="nav-link text-white" (click)="location = 'map';">
+          <div *ngIf="open">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/map.svg?alt=media&token=97833b96-341b-42ea-ac30-0899849bb5dd" class="icon bi me-2" alt="" srcset="">
+            Mapas
+          </div>
+          <img *ngIf="!open" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/map.svg?alt=media&token=97833b96-341b-42ea-ac30-0899849bb5dd" class="icon bi me-2" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/timeline']" [ngClass]="{'active': location == 'timeline'}" class="nav-link text-white" (click)="location = 'timeline';">
+          <div *ngIf="open">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/timeline.svg?alt=media&token=c17cfc88-a9d6-4a08-8339-952280bb054e" class="icon bi me-2" alt="" srcset="">
+            Linea temporal
+          </div>
+          <img *ngIf="!open" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/timeline.svg?alt=media&token=c17cfc88-a9d6-4a08-8339-952280bb054e" class="icon bi me-2" alt="" srcset="">
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <!-- <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>mdo</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div> -->
+</div>

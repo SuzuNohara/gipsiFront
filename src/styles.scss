@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #ccc !important;
+}
+
+.form-control{
+    background-color: #1e1e1e !important;
+    border-color: #999 !important;
+    color: snow !important;
+}
+
+.icon{
+    width: 20px;
+    fill: snow;
+}
+
+.logo{
+    width: 40px;
+}
+
+.col-icon{
+    color: snow;
+}
+
+.col-icon>button{
+    text-align: center;
+}
+
+.margin-top{
+    margin-top: 40px;
+}
+
+.container{
+    height: 90vh;
+    padding-top: 4vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex>*{
+    margin-left: 10px;
+}

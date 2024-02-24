@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-body-dark">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <button (click)="toggleMenu()" class="btn btn-dark">
+          <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/hermione-system.appspot.com/o/menu.svg?alt=media&token=ac48916d-c2cf-4823-9068-f3c862c5f702" alt="" srcset="">
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">{{ current }}</a>
+          </li>
+          <li class="nav-item">
+            <span class="badge text-bg-dark">Dark</span>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+          <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/icons/plus.svg" class="icon bi me-2" alt="" srcset="">
+          </button>
+        </div>
+      </div>
+    </div>
+</nav>
